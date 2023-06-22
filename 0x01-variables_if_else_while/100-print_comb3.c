@@ -3,7 +3,7 @@
 /**
  * main - Print comb is a program that prints,
  * all possible different combinations of two digits.
- * Return: 0 (succes)
+ * Return: 0 (success)
  */
 
 int main(void)
