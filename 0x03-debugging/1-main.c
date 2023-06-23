@@ -13,9 +13,9 @@ int main(void)
 
         i = 0;
 
-        while (i < 10) /* This is the part of the loop that is making it infinte */
+        while (i < 10) /* This is the part of the loop that has a bug */
         {
-                putchar(i); /* i should be incremented here to the loop from being infinte */
+                putchar(i);
         }
 
         printf("Infinite loop avoided! \\o/\n");
