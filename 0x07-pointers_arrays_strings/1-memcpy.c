@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _memcpy - copies memory area
@@ -8,15 +9,14 @@
  * Return: copied memory with n byted changed
  */
 
-char *memcpy(char *dest, char *src, unsigned int n)
+void* memcpy(void *dest, const void *src, size_t n)
 {
-	int r = 0;
-	int i = n;
+	char* dest_ptr = dest;
+	const char* src_ptr = src;
 
-	for (; r < i; r++)
+	for (size_t i = 0; i < n; i++)
 	{
-		dest[r] = src [r];
-		n--;
+		dest_ptr[i] = src_ptr[i];
 	}
 	return (dest);
 }
